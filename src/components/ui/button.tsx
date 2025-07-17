@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Jewelry Store Variants
+        gold: "bg-gradient-to-r from-gold-light to-gold text-charcoal hover:shadow-md transform hover:scale-105 transition-all duration-300 font-semibold",
+        elegant: "bg-charcoal text-cream hover:bg-warm-gray border border-gold/20 hover:border-gold/40 transition-all duration-300",
+        premium: "bg-gradient-to-r from-champagne to-cream text-charcoal hover:shadow-lg transform hover:scale-105 border border-gold/30 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
