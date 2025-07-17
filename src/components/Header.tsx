@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Cart from "@/components/Cart";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,12 +41,7 @@ const Header = () => {
 
           {/* Cart and Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="relative">
-              <ShoppingBag className="h-5 w-5" />
-              <span className="absolute -top-2 -right-2 h-5 w-5 bg-gold text-charcoal rounded-full flex items-center justify-center text-xs font-bold">
-                0
-              </span>
-            </Button>
+            <Cart />
             
             {/* Mobile menu button */}
             <Button
